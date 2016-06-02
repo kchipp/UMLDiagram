@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="693b1016-f212-4c71-bcc7-66f3ad903d2b" name="UMLClassDiagram1" linkedPackageId="1acc5148-40c6-4b0c-83ca-a7987358f55a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3011bc57-4815-40b0-aae2-12419c486b20">
+      <profileInstance Id="afbc712f-44d0-451b-be04-d2c3f523a06d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ed52ab3f-e6ec-4a53-853e-88928009ee2a">
+      <profileInstance Id="3e7582da-cb3f-4e96-8839-14e6b8911678" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ff6d4791-1601-4b8b-b458-dc90f095179f" name="Robot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="37aa2c1c-af14-435f-a770-d2e9c9bf7429" />
+        <ownedAttributesInternal>
+          <property Id="4785eba2-ab14-48a1-9bd5-c94efcdcab3c" name="powerLevel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9f889a65-4e66-4477-ab33-92a5398b19b3" />
+          </property>
+          <property Id="8a51b9f9-d57d-4d41-864d-d6ef1c57428f" name="sensors" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9d005b19-b541-4790-b2a3-45dafc3a5462" />
+          </property>
+          <property Id="ff117704-fcef-4c81-a38f-bb55516ad043" name="recharge" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c6f00a0c-2ef5-4879-a84b-b3d8bbe492cd" />
+          </property>
+          <property Id="1526d79f-5817-4f4c-9ed2-fe62e6548662" name="mobility" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4d328352-8e5a-4603-b5b3-2d15c84b15ba" />
+          </property>
+          <property Id="2818774e-0569-45bd-95bb-d9baa43726d9" name="function" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="446408e1-18ec-448f-9b46-1e1606bc421d" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="724cde8f-3a5b-456a-a125-be27a521bbcd" name="Robot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b2d6bcf4-5b1c-4cb0-84e7-3a1b9bffe5ad" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="31df9d8e-0a70-4ae0-9323-649b92565c06" name="Drone" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="72f829f3-3d78-4158-8470-0e903b464907" />
+        <generalsInternal>
+          <generalization Id="c5f1ca32-46ec-41a8-b112-b1a36363ae7b" isSubstitutable="false">
+            <classMoniker Id="ff6d4791-1601-4b8b-b458-dc90f095179f" LastKnownName="Robot" />
+            <elementDefinition Id="7be2547e-3bcd-44ff-9913-cfa6afe9eaf2" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="ecfe584e-bb59-4fb3-81d2-9ff869f2a5d8" name="surveillance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9120f1ad-ae63-4413-9a69-e3c6eb67a019" />
+          </operation>
+          <operation Id="91d7d1a4-2965-4699-95ae-0654ebbdaee6" name="takePictures" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="deed27c6-11b2-42b2-88cf-8b350d12a423" />
+          </operation>
+          <operation Id="79a725d7-7cf0-4cb8-9362-4e7a35b811a7" name="chargePower" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bac80c5d-4bb3-4e53-bf2f-ee945d5fba98" />
+          </operation>
+          <operation Id="2cefe512-4191-415f-8db8-dff5073c555d" name="Drone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="87ea2713-7f07-4bbc-b05d-9894b0191fd5" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c94f98a1-dfff-447b-a289-1be01060a67e" name="WallE" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e237c43d-81ae-41e4-8e1f-ee41b5ad4724" />
+        <generalsInternal>
+          <generalization Id="4b2ed2a6-c090-4af3-8304-d8383299544a" isSubstitutable="false">
+            <classMoniker Id="ff6d4791-1601-4b8b-b458-dc90f095179f" LastKnownName="Robot" />
+            <elementDefinition Id="5cfe9c6f-0539-46db-93b1-fb2a09166762" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="e1281bc3-f02f-4e37-8e8d-aa81f59cc646" name="manipulator" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="78611ddc-7a62-4a3c-be01-49f61d55e82b" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="53bea559-7c78-41dd-ba5e-9da14b04047d" name="collectTrash" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="64756c21-e759-4d9c-9b30-e7cfb8f933cd" />
+          </operation>
+          <operation Id="f02ab067-b532-497a-8fd7-d4905d9f6c21" name="compactTrash" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="86b1bbff-590e-4028-84a6-7663904c024f" />
+          </operation>
+          <operation Id="7a4a59d1-bad2-496a-a21d-d0905ec1e4f4" name="stackTrash" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ea68da8e-0389-4e3d-807f-a9868137a315" />
+          </operation>
+          <operation Id="a933a7a8-4c72-47d2-8028-1e8dda0ff8fc" name="rechargePower" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8f6a7d17-8587-4fcf-9f65-23d105073298" />
+          </operation>
+          <operation Id="af1edb41-6c68-494c-90ff-dab48bbbbdc1" name="WallE" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0cf1f8ac-1f4e-4b1a-9240-bb5fd8e7e302" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dd25b143-8d34-4121-8cf1-4b712a0fe492" name="Romba" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="21df7e69-fb19-4206-81bc-b1a0b749df1a" />
+        <generalsInternal>
+          <generalization Id="7eab412d-96c1-4987-a969-f5cf5ea87571" isSubstitutable="false">
+            <classMoniker Id="ff6d4791-1601-4b8b-b458-dc90f095179f" LastKnownName="Robot" />
+            <elementDefinition Id="f0739914-24bc-41d2-bac6-9daf7157b167" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="c169eeca-ab9a-4fb5-bff5-99157ab7bdd1" name="cleanFloors" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f5a93d74-0be4-41ae-83ed-b0360dbb214e" />
+          </operation>
+          <operation Id="20d7d9ec-a1b4-44d7-98e2-f4aa529a7833" name="chargePower" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b1df7a97-d2da-4b72-ab5e-3373a15a6b7c" />
+          </operation>
+          <operation Id="71cbe643-6c53-4363-b1f8-5ae8af8c8607" name="Romba" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2eeac4f5-319d-4021-b025-2435ec4c6f0f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7d695249-7d5b-4c1f-82b8-387270d4a8cc" name="BattleBot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="689986a0-3612-4c29-a9be-7efacbf03182" />
+        <generalsInternal>
+          <generalization Id="083e2a67-04c6-48a3-b242-ef6a767fb614" isSubstitutable="false">
+            <classMoniker Id="ff6d4791-1601-4b8b-b458-dc90f095179f" LastKnownName="Robot" />
+            <elementDefinition Id="81ae1f6a-9530-4700-b78a-83dfd4c6b973" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="a57d788d-e78b-42dc-bf72-d8b22f379f2b" name="weapons" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5256a431-6eef-420b-996a-00de63a0c920" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e140810f-8e4a-48d0-ba77-4d2b8d0bae9f" name="attack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3698600c-e821-4f1c-a71a-cbd84c3f8ca0" />
+          </operation>
+          <operation Id="e4b29ceb-e80e-47b0-b443-ed6794441f03" name="useWeapon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c1aa8f27-b1c3-4221-9c04-7ef7bd499efa" />
+          </operation>
+          <operation Id="124d7f79-b790-4f9d-a31c-0637c1dc4623" name="BattleBot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2adfff7e-188f-4423-8bc2-16e655d4b5fa" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f0fa9a2b-b304-46a8-85be-74de3f9ed4dd" name="SmashBot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9a62614b-56f9-427d-bd53-b0028daed589" />
+        <generalsInternal>
+          <generalization Id="5b77f504-8c1d-4e84-9bc6-2959bbfba661" isSubstitutable="false">
+            <classMoniker Id="ff6d4791-1601-4b8b-b458-dc90f095179f" LastKnownName="Robot" />
+            <elementDefinition Id="2f75a02a-b701-4c45-af98-57df1a519c07" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="3fbda12d-7c5e-4a4e-9a5d-9f53705da4a7" isDerived="false" sourceEndRoleName="SmashBot" targetEndRoleName="WallE" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c94f98a1-dfff-447b-a289-1be01060a67e" LastKnownName="WallE" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b105d4d1-7173-49b5-a623-8010fcbc6c5a" name="SmashBot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a0e9a59c-ea8a-4b5b-a4f9-21a82b2afea6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a87bf65e-3d83-4ba8-9021-46f875edd8c4" name="WallE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f61328be-39be-4135-b19b-5da807e81732" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d9939a97-796a-4350-b3b2-b1ff6b3d9237" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="dff91ca9-8138-45ed-b66b-62b45ee068a2" name="chargePower" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ed5de848-3f62-4052-9c1a-1654af7c4cfc" />
+          </operation>
+          <operation Id="f5f48613-e91e-4ec1-8664-489ce8ce1674" name="smashStuff" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85d6208e-abee-4c19-95cf-f28fc8ee65c2" />
+          </operation>
+          <operation Id="5a51062a-ee4e-42f3-aa17-16fc73bf030f" name="SmashBot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="617aed16-408b-4202-9627-7d4fce62ccfb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="1acc5148-40c6-4b0c-83ca-a7987358f55a" name="ModelingProject1">
+    <elementDefinition Id="a5e14ac3-1339-47d3-8596-fa09d260500c" />
+  </package>
+</logicalClassDesignerModel>
